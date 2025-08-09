@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Literata } from 'next/font/google'
-
-const literata = Literata({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-literata'
-})
+ 
 
 export default function PricingPage() {
   return (
-    <div className={`min-h-screen bg-white ${literata.variable}`}>
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -41,7 +35,7 @@ export default function PricingPage() {
           <div className="text-sm font-medium text-[#E55039] mb-6 tracking-wide uppercase">
             Simple, Transparent Pricing
           </div>
-          <h1 className={`text-5xl lg:text-6xl font-light leading-tight text-gray-900 mb-8 ${literata.className}`}>
+          <h1 className="text-5xl lg:text-6xl font-light leading-tight text-gray-900 mb-8">
             Choose the plan that fits your <span className="text-[#E55039]">study timeline</span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
@@ -186,7 +180,7 @@ export default function PricingPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className={`text-3xl font-light text-gray-900 mb-12 text-center ${literata.className}`}>
+            <h2 className="text-3xl font-light text-gray-900 mb-12 text-center">
               Frequently asked questions
             </h2>
             
@@ -234,7 +228,7 @@ export default function PricingPage() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className={`text-4xl font-light text-gray-900 mb-8 ${literata.className}`}>
+          <h2 className="text-4xl font-light text-gray-900 mb-8">
             Ready to <span className="text-[#E55039]">optimize</span> your board preparation?
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">

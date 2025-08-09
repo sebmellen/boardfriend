@@ -1,15 +1,9 @@
 import Link from "next/link"
-import { Literata } from 'next/font/google'
-
-const literata = Literata({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-literata'
-})
+ 
 
 export default function DesignPhilosophyPage() {
   return (
-    <div className={`min-h-screen bg-white ${literata.variable}`}>
+    <div className="min-h-screen bg-white">
       <header className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/marketing" className="text-2xl font-light tracking-tight text-gray-900">
@@ -31,7 +25,7 @@ export default function DesignPhilosophyPage() {
           <div className="text-sm font-medium text-[#E55039] mb-6 tracking-wide uppercase">
             Design Philosophy & Guidelines
           </div>
-          <h1 className={`text-5xl font-light leading-tight text-gray-900 mb-12 ${literata.className}`}>
+          <h1 className="text-5xl font-light leading-tight text-gray-900 mb-12">
             Clinical <span className="text-[#E55039]">precision</span> meets digital clarity
           </h1>
           
@@ -40,7 +34,7 @@ export default function DesignPhilosophyPage() {
               BoardFriend's design philosophy draws inspiration from the precision, clarity, and professionalism inherent in medical practice. Every design decision reflects the serious, focused nature of medical education while maintaining approachability and ease of use.
             </p>
 
-            <h2 className={`text-3xl font-light text-gray-900 mb-6 mt-16 ${literata.className}`}>
+            <h2 className="text-3xl font-light text-gray-900 mb-6 mt-16">
               Core Design Principles
             </h2>
             
@@ -72,7 +66,7 @@ export default function DesignPhilosophyPage() {
               We enhance our clean foundation with carefully placed <span className="text-[#E55039] font-medium">gradient backgrounds</span> that create depth while maintaining the clinical precision our users expect. Soft gradients in our scrub blue palette add visual interest without compromising the professional aesthetic.
             </p>
 
-            <h2 className={`text-3xl font-light text-gray-900 mb-6 mt-20 ${literata.className}`}>
+            <h2 className="text-3xl font-light text-gray-900 mb-6 mt-20">
               UI Design Guidelines
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-12">
@@ -197,7 +191,7 @@ export default function DesignPhilosophyPage() {
               </ul>
             </div>
 
-            <h2 className={`text-3xl font-light text-gray-900 mb-6 mt-20 ${literata.className}`}>
+            <h2 className="text-3xl font-light text-gray-900 mb-6 mt-20">
               The Medical Orange Philosophy
             </h2>
             

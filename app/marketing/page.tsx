@@ -1,21 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, Check } from "lucide-react"
 import Link from "next/link"
-import { Literata } from 'next/font/google'
-
-const literata = Literata({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-literata'
-})
+ 
 
 export default function HomePage() {
   return (
-    <div className={`min-h-screen bg-white ${literata.variable}`}>
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/marketing" className={`text-2xl font-medium tracking-tight text-gray-900 ${literata.className}`}>
+          <Link href="/marketing" className="text-2xl font-medium tracking-tight text-gray-900">
             Board<span className="text-[#E55039]">Friend</span>
           </Link>
           <div className="flex items-center space-x-8">
@@ -44,7 +38,7 @@ export default function HomePage() {
               <div className="text-sm font-medium text-[#E55039] mb-6 tracking-wide uppercase">
                 For Medical Students
               </div>
-              <h1 className={`text-5xl lg:text-6xl font-light leading-tight text-gray-900 mb-8 ${literata.className}`}>
+              <h1 className="text-5xl lg:text-6xl font-light leading-tight text-gray-900 mb-8">
                 AI-powered board preparation that actually <span className="text-[#E55039]">works</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -86,7 +80,7 @@ export default function HomePage() {
       <section className="relative bg-gray-50 py-24 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="max-w-3xl">
-            <h2 className={`text-4xl font-light text-gray-900 mb-8 ${literata.className}`}>
+            <h2 className="text-4xl font-light text-gray-900 mb-8">
               You're studying <span className="text-[#E55039]">harder</span>, not smarter
             </h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
@@ -106,7 +100,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-24 items-center mb-24">
             <div>
-              <h3 className={`text-3xl font-light text-gray-900 mb-6 ${literata.className}`}>
+              <h3 className="text-3xl font-light text-gray-900 mb-6">
                 Personalized AI tutoring that <span className="text-[#E55039]">adapts</span> to you
               </h3>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -145,7 +139,7 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <h3 className={`text-3xl font-light text-gray-900 mb-6 ${literata.className}`}>
+              <h3 className="text-3xl font-light text-gray-900 mb-6">
                 <span className="text-[#E55039]">Predictive</span> performance insights
               </h3>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -170,7 +164,7 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h3 className={`text-3xl font-light text-gray-900 mb-6 ${literata.className}`}>
+              <h3 className="text-3xl font-light text-gray-900 mb-6">
                 <span className="text-[#E55039]">Seamless</span> workflow integration
               </h3>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -206,7 +200,7 @@ export default function HomePage() {
       <section className="relative bg-gradient-to-r from-[#FDF2EF] via-white to-[#FBF7F5] py-24 border-y border-[#F5C4B0] overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className={`text-3xl font-light text-gray-900 mb-12 ${literata.className}`}>
+            <h2 className="text-3xl font-light text-gray-900 mb-12">
               Trusted by medical students at <span className="text-[#E55039]">top programs</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8 text-sm text-[#CC3D1F] font-medium">
@@ -224,7 +218,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-6 text-center">
-          <h2 className={`text-4xl font-light text-gray-900 mb-8 ${literata.className}`}>
+          <h2 className="text-4xl font-light text-gray-900 mb-8">
             Experience tutoring that actually <span className="text-[#E55039]">teaches</span>
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -249,7 +243,7 @@ export default function HomePage() {
       <footer className="border-t border-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className={`text-2xl font-medium tracking-tight text-gray-900 mb-4 md:mb-0 ${literata.className}`}>
+            <div className="text-2xl font-medium tracking-tight text-gray-900 mb-4 md:mb-0">
               Board<span className="text-[#E55039]">Friend</span>
             </div>
             <div className="flex items-center space-x-8 text-sm text-gray-500">

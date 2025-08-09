@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Brain, BarChart3, Zap, Target, Users, Clock, CheckCircle, TrendingUp, BookOpen, Lightbulb, Shield } from "lucide-react"
 import Link from "next/link"
-import { Literata } from 'next/font/google'
-
-const literata = Literata({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-literata'
-})
+ 
 
 export default function FeaturesPage() {
   const features = [
@@ -80,7 +74,7 @@ export default function FeaturesPage() {
   ]
 
   return (
-    <div className={`min-h-screen bg-white ${literata.variable}`}>
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -112,7 +106,7 @@ export default function FeaturesPage() {
             <div className="text-sm font-medium text-[#E55039] mb-6 tracking-wide uppercase">
               Powerful Features
             </div>
-            <h1 className={`text-6xl lg:text-7xl font-light leading-tight text-gray-900 mb-8 ${literata.className}`}>
+            <h1 className="text-6xl lg:text-7xl font-light leading-tight text-gray-900 mb-8">
               AI that thinks like a <span className="text-[#E55039]">physician</span>
             </h1>
             <p className="text-2xl text-gray-600 leading-relaxed max-w-3xl">
@@ -126,7 +120,7 @@ export default function FeaturesPage() {
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className={`text-4xl font-light text-gray-900 mb-6 ${literata.className}`}>
+            <h2 className="text-4xl font-light text-gray-900 mb-6">
               Everything you need to <span className="text-[#E55039]">excel</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -188,7 +182,7 @@ export default function FeaturesPage() {
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className={`text-4xl font-light text-white mb-8 ${literata.className}`}>
+              <h2 className="text-4xl font-light text-white mb-8">
                 See BoardFriend in <span className="text-[#F2A085]">action</span>
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -261,7 +255,7 @@ export default function FeaturesPage() {
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className={`text-4xl font-light text-gray-900 mb-6 ${literata.className}`}>
+            <h2 className="text-4xl font-light text-gray-900 mb-6">
               Works with your <span className="text-[#E55039]">existing workflow</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -298,7 +292,7 @@ export default function FeaturesPage() {
           <div className="bg-gradient-to-r from-[#FDF2EF] to-[#FBF7F5] rounded-2xl p-12 border border-[#F5C4B0]">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className={`text-3xl font-light text-gray-900 mb-6 ${literata.className}`}>
+                <h3 className="text-3xl font-light text-gray-900 mb-6">
                   One dashboard, <span className="text-[#E55039]">unlimited insights</span>
                 </h3>
                 <p className="text-lg text-gray-600 mb-8">
@@ -371,7 +365,7 @@ export default function FeaturesPage() {
       {/* CTA Section */}
       <section className="py-32 bg-gradient-to-br from-gray-900 via-[#E55039] to-gray-900">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className={`text-5xl font-light text-white mb-8 ${literata.className}`}>
+          <h2 className="text-5xl font-light text-white mb-8">
             Ready to study <span className="text-[#F2A085]">smarter</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
